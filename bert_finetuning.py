@@ -251,3 +251,12 @@ emotion_classifier = pipeline("text-classification", model=finetuned_model, toke
 print(emotion_classifier("I am so happy today!"))
 print(emotion_classifier("I feel terrible and sad."))
 
+"""
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Device set to use cuda:0
+
+[{'label': 'LABEL_0', 'score': 0.21854345500469208}]
+[{'label': 'LABEL_5', 'score': 0.19681425392627716}]
+"""
+
